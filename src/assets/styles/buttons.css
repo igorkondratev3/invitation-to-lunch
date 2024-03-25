@@ -1,0 +1,192 @@
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.base-text-button {
+  font-size: 14px !important;
+  color: var(--light-blue) !important;
+  text-transform: unset !important;
+}
+
+.base-text-button .v-btn__content {
+  color: var(--black) !important;
+}
+
+.base-text-button .v-ripple__container {
+  color: var(--black) !important;
+}
+
+.base-text-button .v-btn__overlay {
+  background: transparent !important;
+}
+
+.base-text-button.hover:hover {
+  background-color: var(--light-blue) !important;
+}
+
+.simple-text-button {
+  padding: 0px !important;
+  height: 20px !important;
+  border-radius: 4px !important;
+  font-size: 14px !important;
+  color: var(--blue) !important;
+  opacity: 100% !important;
+  text-transform: unset !important;
+  letter-spacing: 0em !important;
+}
+
+.simple-text-button:hover {
+  color: var(--dark-blue-outline) !important;
+}
+
+.icon-button {
+  width: 24px !important;
+  padding: 0 !important;
+  color: var(--black) !important;
+}
+
+.icon-button.v-btn--size-default {
+  min-width: 24px !important;
+}
+
+.icon-button.v-btn--variant-plain {
+  opacity: 1;
+}
+
+.icon-button.show-btn:hover {
+  color: var(--blue) !important;
+}
+
+.icon-button.edit-btn:hover {
+  color: var(--green) !important;
+}
+
+.icon-button.remove-btn:hover {
+  color: var(--red) !important;
+}
+
+.filter-button {
+  width: 54px !important;
+  height: 40px !important;
+  padding: 10px !important;
+  border-radius: 4px !important;
+  color: var(--black) !important;
+}
+
+.filter-button.v-btn--size-default {
+  min-width: 24px !important;
+}
+
+.filter-button.v-btn--variant-plain {
+  opacity: 1;
+}
+
+.filter-button.active {
+  color: var(--blue) !important;
+  background-color: var(--light-blue);
+}
+
+.base-button {
+  min-width: 132px !important;
+  height: 44px !important;
+  padding: 4px 12px !important;
+  border-radius: 6px !important;
+  color: var(--black) !important;
+  border: 2px solid var(--black) !important;
+  font-size: 14px !important;
+  text-transform: unset !important;
+  letter-spacing: 0em !important;
+}
+
+.base-button.v-btn--variant-plain {
+  opacity: 1;
+}
+
+.base-button .v-icon {
+  margin-right: 8px !important;
+}
+
+.base-button.fill-button {
+  background: var(--black) !important;
+  color: var(--white) !important;
+}
+
+.base-button:disabled {
+  background: #f2f0f0 !important;
+  border-color: #f2f0f0 !important;
+  opacity: 1 !important;
+}
+
+.base-button:disabled .v-btn__content {
+  color: #6c6c6c !important;
+}
+
+.base-button.fill-button:disabled {
+  background: var(--light-gray-pop-up) !important;
+  opacity: 1 !important;
+}
+
+.base-button.fill-button:disabled .v-btn__content {
+  color: var(--dark-gray) !important;
+}
+
+.base-button.fill-button {
+  border: initial !important;
+}
+
+.base-button.above-table {
+  height: 36px !important;
+}
+
+.base-button.above-table:hover {
+  background-color: var(--light-blue) !important;
+}
+
+.base-button.large-button {
+  min-width: 102px !important;
+  width: 100% !important;
+  height: 56px !important;
+  font-size: 16px !important;
+}
+
+.base-button.width_224 {
+  width: 224px !important;
+}
+
+.base-button .disabled-clue {
+  display: none;
+}
+
+.base-button:disabled .disabled-clue {
+  display: block;
+  font-size: 10px;
+  color: var(--blue);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+}
+
+.base-button.large-button:disabled {
+  color: var(--dark-gray) !important;
+  background: var(--light-gray-pop-up) !important;
+  border-color: var(--light-gray-pop-up) !important;
+}
+
+.arrow-button {
+  position: absolute !important;
+  top: 50%;
+  color: var(--blue) !important;
+}
+
+.arrow-button__left {
+  left: 0;
+  transform: translate(calc(-100% - 8px), -50%);
+}
+
+.arrow-button__right {
+  right: 0;
+  transform: translate(calc(100% + 8px), -50%);
+}

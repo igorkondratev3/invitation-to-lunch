@@ -1,0 +1,20 @@
+.base-pagination {
+  font-size: 14px !important;
+}
+
+.base-pagination .v-pagination__next .v-btn:disabled,
+.base-pagination .v-pagination__prev .v-btn:disabled {
+  visibility: hidden;
+}
+
+.base-pagination .v-btn--variant-plain {
+  opacity: 0.5 !important;
+}
+
+.base-pagination .v-pagination__item--is-active .v-btn--variant-plain {
+  opacity: 1 !important;
+}
+
+.base-pagination .v-pagination__item--is-active .v-btn--disabled {
+  opacity: 0.5 !important;
+}

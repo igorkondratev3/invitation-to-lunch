@@ -1,0 +1,14 @@
+.base-date-picker {
+  border-radius: 12px !important;
+  width: 100% !important;
+}
+
+.base-date-picker .v-date-picker-month__days .v-btn:hover {
+  border: 1px solid var(--blue);
+  color: var(--blue);
+}
+
+.base-date-picker .v-date-picker-month__days .v-date-picker-month__day--selected .v-btn {
+  background-color: var(--blue) !important;
+  color: var(--white) !important;
+}

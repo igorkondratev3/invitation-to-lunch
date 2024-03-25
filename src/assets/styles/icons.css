@@ -1,0 +1,23 @@
+.app-icon {
+  display: block;
+  width: 64px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.uikit-icon {
+  display: inline-block;
+  transition: background 0.4s;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  background-size: 24px 24px;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.delay-03 {
+  transition: all 0.3s !important;
+}

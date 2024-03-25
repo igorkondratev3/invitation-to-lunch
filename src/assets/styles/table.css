@@ -1,0 +1,55 @@
+.base-table th {
+  white-space: nowrap;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  color: var(--black) !important;
+  background-color: white !important;
+}
+
+.base-table tbody tr {
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  color: var(--black) !important;
+}
+
+.base-table.fixed-last-column th:last-child {
+  position: sticky !important;
+  right: 0 !important;
+  background-color: var(--white) !important;
+}
+
+.base-table.fixed-last-column td:last-child {
+  position: sticky !important;
+  right: 0 !important;
+  background-color: var(--white) !important;
+}
+
+.base-table.fixed-last-column.shadow-last-column th:last-child {
+  box-shadow: -3px 0px 11px 0px #0000000d !important;
+}
+
+.base-table.fixed-last-column.shadow-last-column td:last-child {
+  box-shadow: -3px 0px 11px 0px #0000000d !important;
+}
+
+.base-table .v-progress-linear {
+  color: var(--blue) !important;
+}
+
+.base-table .page-loading {
+  height: 2px !important;
+}
+
+.base-table tr.selectedRow {
+  background-color: var(--light-blue) !important;
+}
+
+.base-table tr.row-hover {
+  cursor: pointer;
+}
+
+.base-table tr.row-hover:hover {
+  background-color: var(--light-blue) !important;
+}

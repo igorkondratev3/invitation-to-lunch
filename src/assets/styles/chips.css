@@ -1,0 +1,22 @@
+.base-chip-group {
+  justify-content: end;
+  margin-right: 16px;
+}
+
+.base-chip {
+  height: 32px !important;
+  color: var(--blue) !important;
+  border-width: 2px !important;
+}
+
+.base-chip.invalid {
+  color: var(--red) !important;
+}
+
+.base-chip .v-chip__overlay {
+  background-color: transparent !important;
+}
+
+.base-chip:hover {
+  background-color: var(--light-blue) !important;
+}
