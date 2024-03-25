@@ -42,6 +42,8 @@ const sendMessage = async () => {
     await telegramApi.sendMessage(msg)
     localStorage.setItem(date, JSON.stringify([hours.value, minutes.value, message.value]))
     notify({ message: 'Данные успешно отправлены', type: 'info' })
+    gifVisibility.value = true
+    setTimeout(() => (gifVisibility.value = false), 4000)
   } catch (e) {
     console.log(e)
     notify({ message: 'Не удалось отправить данные', type: 'error' })
@@ -49,11 +51,13 @@ const sendMessage = async () => {
     loading.value = false
   }
 }
+
+const gifVisibility = ref(false)
 </script>
 
 <template>
   <div class="page-wrapper">
-    <h1 class="lunch">Когда обед?</h1>
+    <h1 class="lunch">Ия, когда обед?</h1>
     <TimePicker
       :hours="hours"
       :minutes="minutes"
@@ -64,6 +68,15 @@ const sendMessage = async () => {
       @updateMessage="updateMessage"
       @sendMessage="sendMessage"
     />
+    <Transition>
+      <img
+        v-show="gifVisibility"
+        class="gif"
+        src="@/assets/sticker.gif"
+        width="250"
+        height="250"
+      />
+    </Transition>
   </div>
 </template>
 
@@ -82,5 +95,19 @@ const sendMessage = async () => {
 .lunch {
   font-family: 'Old Standard TT CY', 'Old Standard TT LA';
   margin-bottom: 24px;
+}
+
+.gif {
+  position: absolute;
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 1s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
 }
 </style>
